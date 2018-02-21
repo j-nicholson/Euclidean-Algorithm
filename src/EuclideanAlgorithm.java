@@ -11,10 +11,15 @@ public class EuclideanAlgorithm {
 		
 		int gcd = euclideanGCD(a, b);
 		System.out.printf("The computed GCD is %d", gcd);
-		scan.close();
-		
+		scan.close();		
 	}
 	
+	/**
+	 * Returns the GCD of two integers using the Euclidean Algorithm.
+	 * @param a an integer
+	 * @param b an integer
+	 * @return x the GCD of integers a and b
+	 */
 	public static int euclideanGCD(int a, int b) {
 		int x = a;
 		int y = b;
@@ -24,8 +29,6 @@ public class EuclideanAlgorithm {
 			x = y;
 			y = remainder;
 		}
-		
 		return x;
 	}
-
 }
